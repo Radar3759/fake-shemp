@@ -51,4 +51,6 @@ body {
 
 .item p {
     display: inline-block;
+    margin-bottom: 5px;
+    margin-top: 5px;
 }
