@@ -26,6 +26,10 @@ body {
     padding: 20px;
 }
 
+.bottom-line {
+    margin-top: 25px;
+}
+
 .established {
     font-style: italic;
 }
