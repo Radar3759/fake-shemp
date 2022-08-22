@@ -6,6 +6,7 @@ h1 {
     width: 200px;
     height:25px;
     margin: 10px auto;
+    
 }
 
 .one {
@@ -22,4 +23,5 @@ h1 {
 
 .container {
     background-color: rgb(0, 0, 0);
+    padding: 10px 0;
 }
