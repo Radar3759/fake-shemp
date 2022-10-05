@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <!-- page title in a h1 with an id title -->
+            <h1 id="title"><strong></strong>Cheese Survey</strong></h1> 
+        <!-- short explanation in a p element with an id of description -->
+        <p id="description">Please tell us what cheese(s) you love!</p>
+        <!-- have a form element with an id of survey-form -->
+        <form id="survey-form">
+                <fieldset>
+                    <!--Inside the form element, you are required to enter your name in an input field that has an id of name and a type of text  -->
+                    <label for="name" id="name-label">Enter Your Name: <input id="name" name="name" type="text" placeholder="your name here" required /></label>
+                    <!-- Inside the form element, you are required to enter your email in an input field that has an id of email -->
+                    <label for="email" id="email-label">Enter Your Email: <input id="email" name="email" type="email" pattern="[a-zA-Z0-9._-]{3,}@[a-zA-Z0-9.-]{3,}\.[a-zA-Z]{2,4}" placeholder="email@email.com"required /></label>
+                    <label for="number" id="number-label">How Many Cheeses are Too Many?<input id="number" type="number" pattern="([1-9]|[1-9][0-9]|100)" name="number" min="1" max="100" placeholder="50"/></label>
+                </fieldset>
+                <fieldset>Is Cheese Great?
+                    <label for="yes"><input id="yes" type="radio" name="cheese-great" class="inline" value="yes"/> Yes!</label>
+                    <label for="also-yes"><input id="also-yes" type="radio" name="cheese-great" class="inline" value="also-yes"/> Also Yes!</label>
+                </fieldset>
+                <fieldset>Favorite Cheese(s) (check all that apply)
+                    <label for="swiss"><input id="swiss" type="checkbox" name="checkbox" class="inline" value="swiss"/>Swiss</label>
+                    <label for="gouda"><input id="gouda" type="checkbox" name="checkbox" class="inline" value="gouda"/>Gouda</label>
+                    <label for="cheddar"><input id="cheddar" type="checkbox"  name="checkbox" class="inline" value="cheddar"/>Cheddar</label>
+                    <label for="portsalut"><input id="portsalut" type="checkbox"  name="checkbox" class="inline" value="portsalut" />Port Salut</label>
+                    <label for="jarlsberg"><input id="jarlsberg" type="checkbox"  name="checkbox" class="inline" value="jarlsberg" />Jarlsberg</label>
+                    <label for="mozzerella"><input id="mozzerella" type="checkbox"  name="checkbox" class="inline" value="mozzerella"/>Mozzerella</label>
+                </fieldset>
+                <fieldset>
+                    <!-- Inside the form element, you should have a select dropdown element with an id of dropdown and at least two options to choose from -->
+                    <label for="dropdown">What is your favorite Cheese dish?
+                    <select id="dropdown" name="dropdown">
+                        <option value="">(select one)</option>
+                        <option value="1">Grilled Cheese</option>
+                        <option value="2">Cheese Soup</option>
+                        <option value="3">Cheese Pizza</option>
+                        <option value="4">Other</option>
+                    </select>
+                    </label>
+                    <label for="comments">Additional Comments:
+                    <textarea id ="bio" rows="3" cols="30" name="bio" placeholder="...but Lovey, there's no Brie."></textarea>
+                    </label>
+                </fieldset>
+            
+            <input id="submit" type="submit" value="Submit"/>
+        </form>
+    </body>
+</html>
