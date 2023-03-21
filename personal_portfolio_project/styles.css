@@ -1,0 +1,21 @@
+body {
+  background-color: black;
+}
+
+h1 {
+  color: white;
+}
+
+#navbar {
+  position: sticky;
+  background: 
+  linear-gradient(45deg, rgb(230,0,76) 33%, rgb(0, 128, 255) 66%, rgb(255,255,102)); */
+  height: 25%;
+  color: white;
+  font-size: 36px;
+}
+
+#welcome-section {
+  height: 100vh;
+
+}
